@@ -1,5 +1,8 @@
 # Шаблони проектування
 [Пул об'єктів](#object-pool-пул-обєктів)
+[Bridge (Міст)](#object-bridge-міст)
+[Memento (Моменто)](#object-memento-моменто)
+[Double Checked Locking (Подвійна перевірка блокування)](#object-double-checked-подвійна-перевірка)
 
 ## Object Pool (Пул об'єктів)
 ### Опис:
