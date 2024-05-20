@@ -19,11 +19,13 @@ classDiagram
 ```
 
 Динамічна модель (діаграма взаємодії):
+```
 sequenceDiagram
     participant Client
     participant Abstraction
     participant Implementor
     Client->>Abstraction: operation()
     Abstraction->>Implementor: operationImpl()
+```
 
 
