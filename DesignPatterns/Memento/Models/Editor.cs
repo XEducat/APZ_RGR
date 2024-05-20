@@ -1,4 +1,6 @@
-﻿namespace Memento
+﻿using Memento.Services;
+
+namespace Memento.Models
 {
     // Originator - клас, чия структура може бути збережена та відновлена
     class Editor

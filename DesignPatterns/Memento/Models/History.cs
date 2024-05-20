@@ -1,11 +1,6 @@
 ﻿using Memento.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Memento
+namespace Memento.Models
 {
     // Caretaker - клас, який зберігає історію змін
     class History
