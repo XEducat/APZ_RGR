@@ -19,12 +19,10 @@ classDiagram
 ```
 
 #### Статична модель (діаграма класів):
-```mermaid
-classDiagram
 sequenceDiagram
     participant Client
-    participant ObjectPool
-    Client->>ObjectPool: getObject()
-    ObjectPool->>Client: Object
-    Client->>ObjectPool: releaseObject(Object)
-```
+    participant Abstraction
+    participant Implementor
+    Client->>Abstraction: operation()
+    Abstraction->>Implementor: operationImpl()
+
