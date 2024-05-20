@@ -50,7 +50,7 @@ classDiagram
         + operationImpl()
     }
     Abstraction <|-- RefinedAbstraction
-    Abstraction *-down-> Implementor
+    Abstraction -- Implementor
     Implementor <|.. ConcreteImplementorA
     Implementor <|.. ConcreteImplementorB
 ```
