@@ -64,3 +64,66 @@ sequenceDiagram
     Client->>Abstraction: operation()
     Abstraction->>Implementor: operationImpl()
 ```
+
+## Memento (Моменто)
+### Опис:
+Шаблон Memento використовується для зберігання стану об'єкту таким чином, щоб в майбутньому можна було відновити цей стан без розкриття внутрішньої структури об'єкта.
+
+### Графічне подання:
+#### Статична модель (діаграма класів):
+```mermaid
+classDiagram
+    class Originator {
+        - state
+        + createMemento(): Memento
+        + restoreFromMemento(memento: Memento)
+    }
+    class Memento {
+        - state
+        + getState()
+    }
+    class Caretaker {
+        - mementos: List<Memento>
+        + addMemento(memento: Memento)
+        + getMemento(index: int): Memento
+    }
+    Originator *-- Memento
+    Caretaker o-- Memento
+```
+
+#### Динамічна модель (діаграма взаємодії):
+```
+sequenceDiagram
+    participant Client
+    participant Originator
+    participant Memento
+    participant Caretaker
+    Client->>Originator: createMemento()
+    Originator->>Memento: getState()
+    Originator->>Caretaker: addMemento(Memento)
+    Client->>Caretaker: getMemento(index)
+    Caretaker->>Memento: getState()
+    Caretaker->>Originator: restoreFromMemento(Memento)
+```
+
+## Double Checked Locking (Подвійна перевірка блокування)
+### Опис:
+Шаблон Double Checked Locking використовується для оптимізації доступу до глобальних ресурсів шляхом перевірки блокування перед введенням в критичну секцію.
+
+### Графічне подання:
+#### Статична модель (діаграма класів):
+```mermaid
+classDiagram
+    class Singleton {
+        - static instance: Singleton
+        + static getInstance(): Singleton
+    }
+```
+
+#### Динамічна модель (діаграма взаємодії):
+```
+sequenceDiagram
+    participant Client
+    participant Singleton
+    Client->>Singleton: getInstance()
+```
