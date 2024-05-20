@@ -18,7 +18,7 @@ classDiagram
     }
 ```
 
-Динамічна модель (діаграма взаємодії):
+#### Динамічна модель (діаграма взаємодії):
 ```
 sequenceDiagram
     participant Client
@@ -29,3 +29,44 @@ sequenceDiagram
 ```
 
 
+## Bridge (Міст)
+
+### Опис:
+Шаблон Bridge використовується для розділення абстракції від її реалізації, так що обидва можуть змінюватись незалежно.
+
+### Графічне подання:
+
+#### Статична модель (діаграма класів):
+```mermaid
+classDiagram
+    class Abstraction {
+        + implementor: Implementor
+        + operation()
+    }
+    class RefinedAbstraction {
+        + operation()
+    }
+    class Implementor {
+        + operationImpl()
+    }
+    class ConcreteImplementorA {
+        + operationImpl()
+    }
+    class ConcreteImplementorB {
+        + operationImpl()
+    }
+    Abstraction <|-- RefinedAbstraction
+    Abstraction *-down-> Implementor
+    Implementor <|.. ConcreteImplementorA
+    Implementor <|.. ConcreteImplementorB
+```
+
+#### Динамічна модель (діаграма взаємодії):
+```
+sequenceDiagram
+    participant Client
+    participant Abstraction
+    participant Implementor
+    Client->>Abstraction: operation()
+    Abstraction->>Implementor: operationImpl()
+```
