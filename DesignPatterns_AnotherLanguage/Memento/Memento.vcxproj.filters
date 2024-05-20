@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DesignPatterns_AnotherLanguage.cpp">
+    <ClCompile Include="Memento.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

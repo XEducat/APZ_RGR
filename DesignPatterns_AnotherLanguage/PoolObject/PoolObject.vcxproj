@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e87b5628-04c1-43c9-a49e-a8d4564f8275}</ProjectGuid>
-    <RootNamespace>DesignPatternsAnotherLanguage</RootNamespace>
+    <ProjectGuid>{a7e90756-d715-4210-b8d2-322082b18e96}</ProjectGuid>
+    <RootNamespace>PoolObject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DesignPatterns_AnotherLanguage.cpp" />
+    <ClCompile Include="PoolObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

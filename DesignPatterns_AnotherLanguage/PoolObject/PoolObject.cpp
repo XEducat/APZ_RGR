@@ -3,6 +3,11 @@
 
 class PooledObject {
 public:
+    void reset() {
+        // Reset object state if needed
+        std::cout << "Object reset" << std::endl;
+    }
+
     void use() {
         std::cout << "Using pooled object" << std::endl;
     }
