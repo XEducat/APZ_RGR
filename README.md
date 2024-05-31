@@ -129,7 +129,7 @@ classDiagram
 ```
 
 #### Динамічна модель (діаграма взаємодії):
-```
+```mermaid
 sequenceDiagram
     participant Client
     participant Singleton
