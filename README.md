@@ -24,7 +24,7 @@ classDiagram
     }
 ```
 #### Динамічна модель (діаграма взаємодії):
-```
+```mermaid
 sequenceDiagram
     participant Client
     participant Abstraction
@@ -64,7 +64,7 @@ classDiagram
 ```
 
 #### Динамічна модель (діаграма взаємодії):
-```
+```mermaid
 sequenceDiagram
     participant Client
     participant Abstraction
@@ -100,7 +100,7 @@ classDiagram
 ```
 
 #### Динамічна модель (діаграма взаємодії):
-```
+```mermaid
 sequenceDiagram
     participant Client
     participant Originator
