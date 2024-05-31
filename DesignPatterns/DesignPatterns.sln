@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectPool", "ObjectPool\Ob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{2FBBFD30-D7AA-402C-AF4F-5DF4D4483AAA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleCheckedLocking", "DoubleCheckedLocking\DoubleCheckedLocking.csproj", "{2FE85C9C-7C1F-403C-A3C2-3E567EA7ECE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2FBBFD30-D7AA-402C-AF4F-5DF4D4483AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FBBFD30-D7AA-402C-AF4F-5DF4D4483AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FBBFD30-D7AA-402C-AF4F-5DF4D4483AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE85C9C-7C1F-403C-A3C2-3E567EA7ECE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE85C9C-7C1F-403C-A3C2-3E567EA7ECE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE85C9C-7C1F-403C-A3C2-3E567EA7ECE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE85C9C-7C1F-403C-A3C2-3E567EA7ECE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
